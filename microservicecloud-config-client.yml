@@ -5,12 +5,17 @@ spring:
     active:
     - test
 ---
+server:
+   port:8002
 spring:
   profiles: dev
   application:
     name: microservicecloud-config-dev
+    
 
 ---
+server:
+  port:8001
 spring:
   profiles: test
   application:
